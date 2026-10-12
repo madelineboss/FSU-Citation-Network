@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fff;
+}
+h1 {
+  text-align: center;
+  color: #782F40;
+  font-size: 1.5rem;
+  margin: 16px 0;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  max-width: 100%;
+}
+
+#stats {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  margin: 0 0 12px;
+}

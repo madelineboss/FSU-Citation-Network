@@ -11,6 +11,7 @@ CSV = Path(__file__).parent / "data" / "paper_citation_links_within_fsu.csv"
 
 def build_network():
     df = pd.read_csv(CSV, dtype=str)        # ids as strings
+    df = df[df["source"] != df["target"]]
     links = (df.groupby(["source", "target"]).size()
                .reset_index(name="value"))
 
